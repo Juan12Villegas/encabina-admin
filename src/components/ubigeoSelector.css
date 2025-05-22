@@ -1,0 +1,61 @@
+.ubigeo-selector {
+    font-family: Arial, sans-serif;
+    /* max-width: 600px; */
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.ubigeo-selector h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Estilos para los selects */
+.select-pais,
+.select-ubigeo {
+    width: 100%;
+    /*  max-width: 300px; */
+}
+
+/* Estilo para las opciones con banderas */
+.flag-option {
+    display: flex;
+    align-items: center;
+}
+
+.flag-icon {
+    width: 20px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+/* Estilo para el input de ciudad extranjera */
+.input-ciudad {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Contenedores para Perú y otros países */
+.peru-container,
+.otro-pais-container {
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}

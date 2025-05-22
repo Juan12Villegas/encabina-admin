@@ -1,0 +1,272 @@
+{
+    "departamentos": [
+        {
+            "id": "01",
+            "nombre": "Amazonas"
+        }
+    ],
+    "provincias": [
+        {
+            "id": "0101",
+            "nombre": "Chachapoyas",
+            "departamento_id": "01"
+        },
+        {
+            "id": "0102",
+            "nombre": "Bagua",
+            "departamento_id": "01"
+        },
+        {
+            "id": "0103",
+            "nombre": "Bongará",
+            "departamento_id": "01"
+        },
+        {
+            "id": "0104",
+            "nombre": "Condorcanqui",
+            "departamento_id": "01"
+        },
+        {
+            "id": "0105",
+            "nombre": "Luya",
+            "departamento_id": "01"
+        },
+        {
+            "id": "0106",
+            "nombre": "Rodríguez de Mendoza",
+            "departamento_id": "01"
+        },
+        {
+            "id": "0107",
+            "nombre": "Utcubamba",
+            "departamento_id": "01"
+        }
+    ],
+    "distritos": [
+        {
+            "id": "010101",
+            "nombre": "Chachapoyas",
+            "provincia_id": "0101"
+        },
+        {
+            "id": "010102",
+            "nombre": "Asunción",
+            "provincia_id": "0101"
+        },
+        {
+            "id": "010103",
+            "nombre": "Chiliquín",
+            "provincia_id": "0101"
+        },
+        {
+            "id": "010104",
+            "nombre": "Huancas",
+            "provincia_id": "0101"
+        },
+        {
+            "id": "010105",
+            "nombre": "La Jalca",
+            "provincia_id": "0101"
+        },
+        {
+            "id": "010106",
+            "nombre": "Levanto",
+            "provincia_id": "0101"
+        },
+        {
+            "id": "010107",
+            "nombre": "Magdalena",
+            "provincia_id": "0101"
+        },
+        {
+            "id": "010108",
+            "nombre": "Marañón",
+            "provincia_id": "0101"
+        },
+        {
+            "id": "010109",
+            "nombre": "Mariscal Benavides",
+            "provincia_id": "0101"
+        },
+        {
+            "id": "010110",
+            "nombre": "Moyobamba",
+            "provincia_id": "0101"
+        },
+        {
+            "id": "010111",
+            "nombre": "San José de Lourdes",
+            "provincia_id": "0101"
+        },
+        {
+            "id": "010112",
+            "nombre": "Santa María de Nieva",
+            "provincia_id": "0101"
+        },
+        {
+            "id": "010113",
+            "nombre": "Uchubamba",
+            "provincia_id": "0101"
+        },
+        {
+            "id": "010201",
+            "nombre": "Bagua",
+            "provincia_id": "0102"
+        },
+        {
+            "id": "010202",
+            "nombre": "Cajaruro",
+            "provincia_id": "0102"
+        },
+        {
+            "id": "010203",
+            "nombre": "Colomboy",
+            "provincia_id": "0102"
+        },
+        {
+            "id": "010204",
+            "nombre": "Jazan",
+            "provincia_id": "0102"
+        },
+        {
+            "id": "010205",
+            "nombre": "La Peca",
+            "provincia_id": "0102"
+        },
+        {
+            "id": "010301",
+            "nombre": "Bongará",
+            "provincia_id": "0103"
+        },
+        {
+            "id": "010302",
+            "nombre": "Chisquilla",
+            "provincia_id": "0103"
+        },
+        {
+            "id": "010303",
+            "nombre": "Corosha",
+            "provincia_id": "0103"
+        },
+        {
+            "id": "010304",
+            "nombre": "Jumbilla",
+            "provincia_id": "0103"
+        },
+        {
+            "id": "010305",
+            "nombre": "Shipasbamba",
+            "provincia_id": "0103"
+        },
+        {
+            "id": "010306",
+            "nombre": "Valera",
+            "provincia_id": "0103"
+        },
+        {
+            "id": "010401",
+            "nombre": "Condorcanqui",
+            "provincia_id": "0104"
+        },
+        {
+            "id": "010402",
+            "nombre": "El Cenepa",
+            "provincia_id": "0104"
+        },
+        {
+            "id": "010501",
+            "nombre": "Luya",
+            "provincia_id": "0105"
+        },
+        {
+            "id": "010502",
+            "nombre": "Cocabamba",
+            "provincia_id": "0105"
+        },
+        {
+            "id": "010503",
+            "nombre": "Chirimoto",
+            "provincia_id": "0105"
+        },
+        {
+            "id": "010504",
+            "nombre": "Longuita",
+            "provincia_id": "0105"
+        },
+        {
+            "id": "010505",
+            "nombre": "Luna",
+            "provincia_id": "0105"
+        },
+        {
+            "id": "010506",
+            "nombre": "María",
+            "provincia_id": "0105"
+        },
+        {
+            "id": "010507",
+            "nombre": "Mármol",
+            "provincia_id": "0105"
+        },
+        {
+            "id": "010508",
+            "nombre": "San Francisco de Daguas",
+            "provincia_id": "0105"
+        },
+        {
+            "id": "010509",
+            "nombre": "San Nicolás",
+            "provincia_id": "0105"
+        },
+        {
+            "id": "010510",
+            "nombre": "San Pedro",
+            "provincia_id": "0105"
+        },
+        {
+            "id": "010511",
+            "nombre": "Soloco",
+            "provincia_id": "0105"
+        },
+        {
+            "id": "010512",
+            "nombre": "Tingo",
+            "provincia_id": "0105"
+        },
+        {
+            "id": "010601",
+            "nombre": "Rodríguez de Mendoza",
+            "provincia_id": "0106"
+        },
+        {
+            "id": "010602",
+            "nombre": "Chirimoto",
+            "provincia_id": "0106"
+        },
+        {
+            "id": "010701",
+            "nombre": "Utcubamba",
+            "provincia_id": "0107"
+        },
+        {
+            "id": "010702",
+            "nombre": "Bagua Grande",
+            "provincia_id": "0107"
+        },
+        {
+            "id": "010703",
+            "nombre": "Cajaruro",
+            "provincia_id": "0107"
+        },
+        {
+            "id": "010704",
+            "nombre": "Colomboy",
+            "provincia_id": "0107"
+        },
+        {
+            "id": "010705",
+            "nombre": "La Peca",
+            "provincia_id": "0107"
+        }
+    ]
+}

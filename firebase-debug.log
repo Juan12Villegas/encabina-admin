@@ -1,0 +1,328 @@
+[debug] [2025-04-30T23:11:50.865Z] ----------------------------------------------------------------------
+[debug] [2025-04-30T23:11:50.868Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\JUAN\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-04-30T23:11:50.868Z] CLI Version:   13.29.1
+[debug] [2025-04-30T23:11:50.868Z] Platform:      win32
+[debug] [2025-04-30T23:11:50.868Z] Node Version:  v22.13.0
+[debug] [2025-04-30T23:11:50.869Z] Time:          Wed Apr 30 2025 18:11:50 GMT-0500 (hora estándar de Perú)
+[debug] [2025-04-30T23:11:50.869Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-30T23:11:50.875Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-30T23:11:50.875Z] > authorizing via signed-in user (idsjuanvillegas@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\DEV 2025\encabina-dj
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-04-30T23:12:23.246Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:12:23.246Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:12:23.247Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-04-30T23:12:24.551Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-04-30T23:12:24.551Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project callcenter-b802a (callCenter) 
+[info] 
+=== Dataconnect Setup
+[debug] [2025-04-30T23:12:26.820Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:12:26.820Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:12:26.821Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/callcenter-b802a/billingInfo [none]
+[debug] [2025-04-30T23:12:27.943Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/callcenter-b802a/billingInfo 200
+[debug] [2025-04-30T23:12:27.944Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/callcenter-b802a/billingInfo {"name":"projects/callcenter-b802a/billingInfo","projectId":"callcenter-b802a","billingAccountName":"","billingEnabled":false}
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2025-04-30T23:12:27.944Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:12:27.945Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:12:27.945Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/callcenter-b802a/services/sqladmin.googleapis.com [none]
+[debug] [2025-04-30T23:12:27.945Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/callcenter-b802a/services/sqladmin.googleapis.com x-goog-quota-user=projects/callcenter-b802a
+[debug] [2025-04-30T23:12:29.039Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/callcenter-b802a/services/sqladmin.googleapis.com 200
+[debug] [2025-04-30T23:12:29.039Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/callcenter-b802a/services/sqladmin.googleapis.com [omitted]
+[warn] !  dataconnect: missing required API sqladmin.googleapis.com. Enabling now... 
+[debug] [2025-04-30T23:12:29.040Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:12:29.040Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:12:29.040Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/callcenter-b802a/services/sqladmin.googleapis.com:enable [none]
+[debug] [2025-04-30T23:12:29.040Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/callcenter-b802a/services/sqladmin.googleapis.com:enable x-goog-quota-user=projects/callcenter-b802a
+[debug] [2025-04-30T23:12:30.505Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/callcenter-b802a/services/sqladmin.googleapis.com:enable 200
+[debug] [2025-04-30T23:12:30.505Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/callcenter-b802a/services/sqladmin.googleapis.com:enable [omitted]
+[debug] [2025-04-30T23:12:40.511Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:12:40.512Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:12:40.513Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/callcenter-b802a/services/sqladmin.googleapis.com [none]
+[debug] [2025-04-30T23:12:40.513Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/callcenter-b802a/services/sqladmin.googleapis.com x-goog-quota-user=projects/callcenter-b802a
+[debug] [2025-04-30T23:12:41.681Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/callcenter-b802a/services/sqladmin.googleapis.com 200
+[debug] [2025-04-30T23:12:41.682Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/callcenter-b802a/services/sqladmin.googleapis.com [omitted]
+[info] +  dataconnect: required API sqladmin.googleapis.com is enabled 
+[info] +  Wrote dataconnect\dataconnect.yaml 
+[info] +  Wrote dataconnect\schema\schema.gql 
+[info] +  Wrote dataconnect\connector\connector.yaml 
+[info] +  Wrote dataconnect\connector\queries.gql 
+[info] +  Wrote dataconnect\connector\mutations.gql 
+[info] +  Detected WEB app in directory C:\DEV 2025\encabina-dj 
+[debug] [2025-04-30T23:12:56.890Z] ----------------------------------------------------------------------
+[debug] [2025-04-30T23:12:56.892Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\JUAN\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-04-30T23:12:56.892Z] CLI Version:   13.29.1
+[debug] [2025-04-30T23:12:56.892Z] Platform:      win32
+[debug] [2025-04-30T23:12:56.892Z] Node Version:  v22.13.0
+[debug] [2025-04-30T23:12:56.892Z] Time:          Wed Apr 30 2025 18:12:56 GMT-0500 (hora estándar de Perú)
+[debug] [2025-04-30T23:12:56.892Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-30T23:12:56.897Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-30T23:12:56.898Z] > authorizing via signed-in user (idsjuanvillegas@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\DEV 2025\encabina-dj
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-04-30T23:13:01.311Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:13:01.312Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:13:01.312Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-04-30T23:13:02.584Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-04-30T23:13:02.585Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project encabina (encabina) 
+[info] 
+=== Dataconnect Setup
+[debug] [2025-04-30T23:13:05.120Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:13:05.120Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:13:05.120Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/encabina/billingInfo [none]
+[debug] [2025-04-30T23:13:06.324Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/encabina/billingInfo 200
+[debug] [2025-04-30T23:13:06.324Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/encabina/billingInfo {"name":"projects/encabina/billingInfo","projectId":"encabina","billingAccountName":"billingAccounts/01C9B2-C82A2B-CF89A7","billingEnabled":true}
+[info] i  dataconnect: ensuring required API firebasedataconnect.googleapis.com is enabled... 
+[debug] [2025-04-30T23:13:06.325Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:13:06.325Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:13:06.325Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-04-30T23:13:06.325Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/encabina
+[debug] [2025-04-30T23:13:07.556Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-04-30T23:13:07.556Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/firebasedataconnect.googleapis.com [omitted]
+[warn] !  dataconnect: missing required API firebasedataconnect.googleapis.com. Enabling now... 
+[debug] [2025-04-30T23:13:07.556Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:13:07.557Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:13:07.557Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/encabina/services/firebasedataconnect.googleapis.com:enable [none]
+[debug] [2025-04-30T23:13:07.557Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/encabina/services/firebasedataconnect.googleapis.com:enable x-goog-quota-user=projects/encabina
+[debug] [2025-04-30T23:13:08.903Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/encabina/services/firebasedataconnect.googleapis.com:enable 200
+[debug] [2025-04-30T23:13:08.904Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/encabina/services/firebasedataconnect.googleapis.com:enable [omitted]
+[debug] [2025-04-30T23:13:18.905Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:13:18.906Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:13:18.906Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-04-30T23:13:18.906Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/encabina
+[debug] [2025-04-30T23:13:20.037Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-04-30T23:13:20.037Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/firebasedataconnect.googleapis.com [omitted]
+[info] +  dataconnect: required API firebasedataconnect.googleapis.com is enabled 
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2025-04-30T23:13:20.040Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:13:20.040Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:13:20.040Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/sqladmin.googleapis.com [none]
+[debug] [2025-04-30T23:13:20.040Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/sqladmin.googleapis.com x-goog-quota-user=projects/encabina
+[debug] [2025-04-30T23:13:20.366Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/sqladmin.googleapis.com 200
+[debug] [2025-04-30T23:13:20.366Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/sqladmin.googleapis.com [omitted]
+[info] +  dataconnect: required API sqladmin.googleapis.com is enabled 
+[info] i  dataconnect: ensuring required API compute.googleapis.com is enabled... 
+[debug] [2025-04-30T23:13:20.368Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:13:20.368Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:13:20.368Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com [none]
+[debug] [2025-04-30T23:13:20.368Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com x-goog-quota-user=projects/encabina
+[debug] [2025-04-30T23:13:21.284Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com 200
+[debug] [2025-04-30T23:13:21.284Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com [omitted]
+[warn] !  dataconnect: missing required API compute.googleapis.com. Enabling now... 
+[debug] [2025-04-30T23:13:21.284Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:13:21.284Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:13:21.284Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com:enable [none]
+[debug] [2025-04-30T23:13:21.284Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com:enable x-goog-quota-user=projects/encabina
+[debug] [2025-04-30T23:13:21.890Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com:enable 200
+[debug] [2025-04-30T23:13:21.890Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com:enable [omitted]
+[debug] [2025-04-30T23:13:31.901Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:13:31.902Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:13:31.902Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com [none]
+[debug] [2025-04-30T23:13:31.902Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com x-goog-quota-user=projects/encabina
+[debug] [2025-04-30T23:13:32.761Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com 200
+[debug] [2025-04-30T23:13:32.761Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com [omitted]
+[info] i  dataconnect: waiting for API compute.googleapis.com to activate... 
+[debug] [2025-04-30T23:13:42.766Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:13:42.767Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:13:42.767Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com [none]
+[debug] [2025-04-30T23:13:42.767Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com x-goog-quota-user=projects/encabina
+[debug] [2025-04-30T23:13:44.121Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com 200
+[debug] [2025-04-30T23:13:44.122Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com [omitted]
+[info] i  dataconnect: waiting for API compute.googleapis.com to activate... 
+[debug] [2025-04-30T23:13:54.122Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:13:54.123Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:13:54.123Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com [none]
+[debug] [2025-04-30T23:13:54.123Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com x-goog-quota-user=projects/encabina
+[debug] [2025-04-30T23:13:55.737Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com 200
+[debug] [2025-04-30T23:13:55.737Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com [omitted]
+[info] i  dataconnect: waiting for API compute.googleapis.com to activate... 
+[debug] [2025-04-30T23:14:05.750Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:14:05.751Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:14:05.751Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com [none]
+[debug] [2025-04-30T23:14:05.752Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com x-goog-quota-user=projects/encabina
+[debug] [2025-04-30T23:14:07.048Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com 200
+[debug] [2025-04-30T23:14:07.048Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com [omitted]
+[info] i  dataconnect: waiting for API compute.googleapis.com to activate... 
+[debug] [2025-04-30T23:14:17.048Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:14:17.048Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:14:17.048Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com [none]
+[debug] [2025-04-30T23:14:17.048Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com x-goog-quota-user=projects/encabina
+[debug] [2025-04-30T23:14:18.336Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com 200
+[debug] [2025-04-30T23:14:18.337Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/compute.googleapis.com [omitted]
+[info] +  dataconnect: required API compute.googleapis.com is enabled 
+[debug] [2025-04-30T23:14:18.339Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:14:18.339Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:14:18.339Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1beta/projects/encabina/locations/-/services [none]
+[debug] [2025-04-30T23:14:19.721Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1beta/projects/encabina/locations/-/services 200
+[debug] [2025-04-30T23:14:19.721Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1beta/projects/encabina/locations/-/services {}
+[debug] [2025-04-30T23:15:35.250Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:15:35.250Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:15:35.250Z] >>> [apiv2][query] GET https://sqladmin.googleapis.com/v1/projects/encabina/instances [none]
+[debug] [2025-04-30T23:15:36.951Z] <<< [apiv2][status] GET https://sqladmin.googleapis.com/v1/projects/encabina/instances 200
+[debug] [2025-04-30T23:15:36.952Z] <<< [apiv2][body] GET https://sqladmin.googleapis.com/v1/projects/encabina/instances {}
+[debug] [2025-04-30T23:15:45.350Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:15:45.350Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:15:45.351Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1beta/projects/encabina/locations [none]
+[debug] [2025-04-30T23:15:46.429Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1beta/projects/encabina/locations 200
+[debug] [2025-04-30T23:15:46.429Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1beta/projects/encabina/locations {"locations":[{"name":"projects/encabina/locations/asia-east1","locationId":"asia-east1","displayName":"Taiwan"},{"name":"projects/encabina/locations/asia-east2","locationId":"asia-east2","displayName":"Hong Kong"},{"name":"projects/encabina/locations/asia-northeast1","locationId":"asia-northeast1","displayName":"Tokyo"},{"name":"projects/encabina/locations/asia-northeast2","locationId":"asia-northeast2","displayName":"Osaka"},{"name":"projects/encabina/locations/asia-northeast3","locationId":"asia-northeast3","displayName":"Seoul"},{"name":"projects/encabina/locations/asia-south1","locationId":"asia-south1","displayName":"Mumbai"},{"name":"projects/encabina/locations/asia-southeast1","locationId":"asia-southeast1","displayName":"Singapore"},{"name":"projects/encabina/locations/asia-southeast2","locationId":"asia-southeast2","displayName":"Jakarta"},{"name":"projects/encabina/locations/australia-southeast1","locationId":"australia-southeast1","displayName":"Sydney"},{"name":"projects/encabina/locations/australia-southeast2","locationId":"australia-southeast2","displayName":"Melbourne"},{"name":"projects/encabina/locations/europe-central2","locationId":"europe-central2","displayName":"Warsaw"},{"name":"projects/encabina/locations/europe-north1","locationId":"europe-north1","displayName":"Finland"},{"name":"projects/encabina/locations/europe-southwest1","locationId":"europe-southwest1","displayName":"Madrid"},{"name":"projects/encabina/locations/europe-west1","locationId":"europe-west1","displayName":"Belgium"},{"name":"projects/encabina/locations/europe-west2","locationId":"europe-west2","displayName":"London"},{"name":"projects/encabina/locations/europe-west3","locationId":"europe-west3","displayName":"Frankfurt"},{"name":"projects/encabina/locations/europe-west4","locationId":"europe-west4","displayName":"Netherlands"},{"name":"projects/encabina/locations/europe-west6","locationId":"europe-west6","displayName":"Zurich"},{"name":"projects/encabina/locations/europe-west8","locationId":"europe-west8","displayName":"Milan"},{"name":"projects/encabina/locations/europe-west9","locationId":"europe-west9","displayName":"Paris"},{"name":"projects/encabina/locations/me-west1","locationId":"me-west1","displayName":"Tel Aviv"},{"name":"projects/encabina/locations/northamerica-northeast1","locationId":"northamerica-northeast1","displayName":"Montréal"},{"name":"projects/encabina/locations/northamerica-northeast2","locationId":"northamerica-northeast2","displayName":"Toronto"},{"name":"projects/encabina/locations/southamerica-east1","locationId":"southamerica-east1","displayName":"São Paulo"},{"name":"projects/encabina/locations/southamerica-west1","locationId":"southamerica-west1","displayName":"Santiago"},{"name":"projects/encabina/locations/us-central1","locationId":"us-central1","displayName":"Iowa"},{"name":"projects/encabina/locations/us-east1","locationId":"us-east1","displayName":"South Carolina"},{"name":"projects/encabina/locations/us-east4","locationId":"us-east4","displayName":"Northern Virginia"},{"name":"projects/encabina/locations/us-south1","locationId":"us-south1","displayName":"Dallas"},{"name":"projects/encabina/locations/us-west1","locationId":"us-west1","displayName":"Oregon"},{"name":"projects/encabina/locations/us-west2","locationId":"us-west2","displayName":"Los Angeles"},{"name":"projects/encabina/locations/us-west3","locationId":"us-west3","displayName":"Salt Lake City"},{"name":"projects/encabina/locations/us-west4","locationId":"us-west4","displayName":"Las Vegas"}]}
+[debug] [2025-04-30T23:17:19.246Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:17:19.246Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:17:19.246Z] >>> [apiv2][query] GET https://sqladmin.googleapis.com/v1/projects/encabina/instances/encabina-dj-fdc/databases [none]
+[debug] [2025-04-30T23:17:19.626Z] <<< [apiv2][status] GET https://sqladmin.googleapis.com/v1/projects/encabina/instances/encabina-dj-fdc/databases 404
+[debug] [2025-04-30T23:17:19.626Z] <<< [apiv2][body] GET https://sqladmin.googleapis.com/v1/projects/encabina/instances/encabina-dj-fdc/databases {"error":{"code":404,"message":"Not Found","errors":[{"message":"Not Found","domain":"global","reason":"notFound"}]}}
+[debug] [2025-04-30T23:17:19.627Z] [dataconnect] Cannot list databases during init: FirebaseError: Request to https://sqladmin.googleapis.com/v1/projects/encabina/instances/encabina-dj-fdc/databases had HTTP Error: 404, Not Found
+[info] +  Wrote dataconnect\dataconnect.yaml 
+[info] i  dataconnect\schema\schema.gql is unchanged 
+[info] i  dataconnect\connector\connector.yaml is unchanged 
+[info] i  dataconnect\connector\queries.gql is unchanged 
+[info] i  dataconnect\connector\mutations.gql is unchanged 
+[info] +  Detected WEB app in directory C:\DEV 2025\encabina-dj 
+[info] i  Wrote new config to C:\DEV 2025\encabina-dj\dataconnect\connector/connector.yaml 
+[info] I0430 18:18:40.938283   33768 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "C:\\DEV 2025\\encabina-dj\\dataconnect-generated\\js\\default-connector"
+I0430 18:18:41.016097   33768 generate.go:40] Generated all sources. Writing them to disk...
+I0430 18:18:41.020607   33768 collector.go:107] connector "default" javascriptSdk wrote into "C:\\DEV 2025\\encabina-dj\\dataconnect-generated\\js\\default-connector"
+Generated sources: index.d.ts [264B] esm\index.esm.js [191B] esm\package.json [17B] index.cjs.js [232B] package.json [634B] 
+I0430 18:18:41.038544   33768 installsdk.go:76] Running command: C:\Program Files\nodejs\npm.cmd install file:dataconnect-generated\js\default-connector
+
+[info] i  Generated SDK code for default 
+[info] +  If you'd like to add more generated SDKs to your app your later, run firebase init dataconnect:sdk again 
+[info] 
+=== Firestore Setup
+[debug] [2025-04-30T23:18:44.353Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:18:44.353Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:18:44.354Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/firestore.googleapis.com [none]
+[debug] [2025-04-30T23:18:44.354Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/firestore.googleapis.com x-goog-quota-user=projects/encabina
+[debug] [2025-04-30T23:18:45.600Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/firestore.googleapis.com 200
+[debug] [2025-04-30T23:18:45.600Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/firestore.googleapis.com [omitted]
+[debug] [2025-04-30T23:18:45.601Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:18:45.601Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:18:45.601Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/encabina/databases/(default) [none]
+[debug] [2025-04-30T23:18:46.703Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/encabina/databases/(default) 200
+[debug] [2025-04-30T23:18:46.703Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/encabina/databases/(default) {"name":"projects/encabina/databases/(default)","uid":"33c2dead-be43-4084-b5f4-b1ebc1702417","createTime":"2025-03-20T05:13:41.600634Z","updateTime":"2025-03-20T05:13:41.600634Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2025-04-30T22:18:46.036933Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","databaseEdition":"STANDARD","freeTier":true,"etag":"IIPerpzygI0DMLH01dLzl4wD"}
+[debug] [2025-04-30T23:18:46.703Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-04-30T23:18:46.703Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-04-30T23:18:46.704Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-30T23:18:46.704Z] > authorizing via signed-in user (idsjuanvillegas@gmail.com)
+[debug] [2025-04-30T23:18:46.704Z] [iam] checking project encabina for permissions ["firebase.projects.get"]
+[debug] [2025-04-30T23:18:46.704Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:18:46.704Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:18:46.704Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/encabina:testIamPermissions [none]
+[debug] [2025-04-30T23:18:46.704Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/encabina:testIamPermissions x-goog-quota-user=projects/encabina
+[debug] [2025-04-30T23:18:46.704Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/encabina:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-30T23:18:47.852Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/encabina:testIamPermissions 200
+[debug] [2025-04-30T23:18:47.852Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/encabina:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-04-30T23:19:14.710Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:19:14.710Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:19:14.711Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/encabina/releases pageSize=10&pageToken=
+[debug] [2025-04-30T23:19:15.407Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/encabina/releases 200
+[debug] [2025-04-30T23:19:15.407Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/encabina/releases {"releases":[{"name":"projects/encabina/releases/cloud.firestore","rulesetName":"projects/encabina/rulesets/168fdf56-76cc-40d7-a4e5-018bbde8a94e","createTime":"2025-03-20T05:13:52.413379Z","updateTime":"2025-03-21T06:41:13.283460Z"},{"name":"projects/encabina/releases/firebase.storage/encabina.firebasestorage.app","rulesetName":"projects/encabina/rulesets/26c8c93f-8da5-45ec-b4c1-da10937f15c2","createTime":"2025-03-29T02:57:36.523955Z","updateTime":"2025-04-23T03:46:17.571293Z"}]}
+[debug] [2025-04-30T23:19:15.407Z] Found ruleset: projects/encabina/rulesets/168fdf56-76cc-40d7-a4e5-018bbde8a94e
+[debug] [2025-04-30T23:19:15.408Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:19:15.408Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:19:15.408Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/encabina/rulesets/168fdf56-76cc-40d7-a4e5-018bbde8a94e [none]
+[debug] [2025-04-30T23:19:16.461Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/encabina/rulesets/168fdf56-76cc-40d7-a4e5-018bbde8a94e 200
+[debug] [2025-04-30T23:19:16.461Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/encabina/rulesets/168fdf56-76cc-40d7-a4e5-018bbde8a94e [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-04-30T23:19:24.290Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:19:24.290Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:19:24.290Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:19:24.290Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:19:24.290Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/encabina/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2025-04-30T23:19:24.291Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/encabina/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2025-04-30T23:19:25.416Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/encabina/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2025-04-30T23:19:25.416Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/encabina/databases/(default)/collectionGroups/-/indexes {"indexes":[{"name":"projects/encabina/databases/(default)/collectionGroups/event_requests/indexes/CICAgJim14AK","queryScope":"COLLECTION","fields":[{"fieldPath":"eventId","order":"ASCENDING"},{"fieldPath":"count","order":"DESCENDING"},{"fieldPath":"__name__","order":"DESCENDING"}],"state":"READY","density":"SPARSE_ALL"},{"name":"projects/encabina/databases/(default)/collectionGroups/eventos/indexes/CICAgOjXh4EK","queryScope":"COLLECTION","fields":[{"fieldPath":"djId","order":"ASCENDING"},{"fieldPath":"estado","order":"ASCENDING"},{"fieldPath":"__name__","order":"ASCENDING"}],"state":"READY","density":"SPARSE_ALL"},{"name":"projects/encabina/databases/(default)/collectionGroups/event_requests/indexes/CICAgJjF9oIK","queryScope":"COLLECTION","fields":[{"fieldPath":"eventId","order":"ASCENDING"},{"fieldPath":"timestamp","order":"DESCENDING"},{"fieldPath":"__name__","order":"DESCENDING"}],"state":"READY","density":"SPARSE_ALL"},{"name":"projects/encabina/databases/(default)/collectionGroups/event_notes/indexes/CICAgJiUpoMK","queryScope":"COLLECTION","fields":[{"fieldPath":"eventId","order":"ASCENDING"},{"fieldPath":"createdAt","order":"DESCENDING"},{"fieldPath":"__name__","order":"DESCENDING"}],"state":"READY","density":"SPARSE_ALL"}]}
+[debug] [2025-04-30T23:19:25.539Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/encabina/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2025-04-30T23:19:25.539Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/encabina/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/encabina/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Genkit Setup
+[warn] !  genkit: Stopped Genkit initialization 
+[info] 
+=== Functions Setup
+[debug] [2025-04-30T23:21:00.872Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-30T23:21:00.872Z] > authorizing via signed-in user (idsjuanvillegas@gmail.com)
+[debug] [2025-04-30T23:21:00.872Z] [iam] checking project encabina for permissions ["firebase.projects.get"]
+[debug] [2025-04-30T23:21:00.872Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:21:00.872Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:21:00.872Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/encabina:testIamPermissions [none]
+[debug] [2025-04-30T23:21:00.873Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/encabina:testIamPermissions x-goog-quota-user=projects/encabina
+[debug] [2025-04-30T23:21:00.873Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/encabina:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-30T23:21:01.970Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/encabina:testIamPermissions 200
+[debug] [2025-04-30T23:21:01.970Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/encabina:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-30T23:21:01.970Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:21:01.970Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:21:01.970Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:21:01.970Z] Checked if tokens are valid: true, expires at: 1746058297122
+[debug] [2025-04-30T23:21:01.971Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-04-30T23:21:01.971Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/encabina
+[debug] [2025-04-30T23:21:01.972Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-04-30T23:21:01.972Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/encabina
+[debug] [2025-04-30T23:21:03.088Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/cloudfunctions.googleapis.com 200
+[debug] [2025-04-30T23:21:03.089Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2025-04-30T23:21:03.411Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/runtimeconfig.googleapis.com 200
+[debug] [2025-04-30T23:21:03.411Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/encabina/services/runtimeconfig.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
