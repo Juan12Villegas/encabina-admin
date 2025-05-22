@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Select from 'react-select';
-import './UbigeoSelector.css'; // Archivo CSS para los estilos
+import './ubigeoSelector.css'; // Archivo CSS para los estilos
 
 const UbigeoSelector = ({ onLocationChange }) => {
     const [pais, setPais] = useState('');

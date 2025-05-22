@@ -6,7 +6,7 @@ import { useParams, useRouter } from "next/navigation";
 import { db, doc, getDoc, setDoc, collection, query, where, onSnapshot, updateDoc, deleteDoc, addDoc } from "@/../lib/firebase";
 import { motion, AnimatePresence } from "framer-motion";
 import { ListMusic, Share2, Tag, Music, X, Check, Disc3, Ban, RotateCcw, Loader2, ChevronUp, MessageSquareDot, ChevronDown } from "lucide-react";
-import { Switch } from "@/components/switch";
+import { Switch } from "@/components/Switch";
 
 import EventStats from "@/components/EventStats";
 import { EventNotes } from "@/components/EventNotes";

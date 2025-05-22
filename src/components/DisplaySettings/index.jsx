@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { auth, db } from "@/../lib/firebase";
 import { doc, getDoc, updateDoc } from "firebase/firestore";
-import { Switch } from "@/components/switch";
+import { Switch } from "@/components/Switch";
 import { Loader2 } from "lucide-react";
 
 export default function DisplaySettings() {
